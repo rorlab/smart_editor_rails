@@ -8,5 +8,9 @@ module SmartEditor
     def copy_temeplate_files
       directory 'public'
     end
+
+    def copy_migraiton_file
+      exec "bundle exec rake smart_editor:install:migrations"
+    end
   end
 end

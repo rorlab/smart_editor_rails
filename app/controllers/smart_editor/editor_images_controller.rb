@@ -2,7 +2,6 @@ require_dependency "smart_editor/application_controller"
 
 module SmartEditor
   class EditorImagesController < ApplicationController
-    skip_before_filter :verify_authenticity_token
 
     def index
     end
