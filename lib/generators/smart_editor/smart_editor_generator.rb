@@ -7,7 +7,9 @@ module SmartEditor
     source_root File.expand_path("../templates", __FILE__)
     def copy_temeplate_files
       directory 'public'
+      directory 'uploads'
       route("mount SmartEditor::Engine => '/smart_editor'")
+
     end
 
     def copy_migraiton_file
