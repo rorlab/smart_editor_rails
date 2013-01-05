@@ -12,5 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require smart_editor
 //= require_tree .

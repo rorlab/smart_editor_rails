@@ -1,8 +1,9 @@
 PATH
   remote: .
   specs:
-    smart_editor (0.0.1)
+    smart_editor (0.0.2)
       carrierwave
+      execjs
       rails (~> 3.2.9)
 
 GEM
@@ -41,6 +42,8 @@ GEM
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
     erubis (2.7.0)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
