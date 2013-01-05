@@ -1,5 +1,6 @@
 require "smart_editor/engine"
 require "smart_editor/class_methods"
+require "smart_editor/form_builder"
 
 module SmartEditor
   def self.bind_editor_images(controller, model_name, actions)
