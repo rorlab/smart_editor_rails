@@ -12,8 +12,10 @@ Gemfile에 다음과 같이 추가해 주시고
 bundle을 입력하여 gem을 설치한 다음에 
 
 다음과 같은 커맨드를 입력하시면 부수적인 파일들이 설치됩니다.
+(html, javasciprt, css, 마이그레이션 등등)
 
     rails g smart_editor
+    rake db:migrate (마이그레이션 필요)
 
 
 application.js 에도 다음과 같이 추가해시면 됩니다.
