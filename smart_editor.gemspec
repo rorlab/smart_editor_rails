@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Rails gem for smart_editor"
   s.description = "gem to use WYSIWYG editor for rails user"
 
-  s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["LGPL-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["LGPL-LICENSE.md", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.9"
