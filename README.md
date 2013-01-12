@@ -15,8 +15,6 @@ bundle을 입력하여 gem을 설치한 다음에
 (html, javasciprt, css, 마이그레이션 등등)
 
     rails g smart_editor
-    rake db:migrate (마이그레이션 필요)
-
 
 application.js 에도 다음과 같이 추가해시면 됩니다.
 
@@ -32,6 +30,10 @@ application.js 에도 다음과 같이 추가해시면 됩니다.
 
 혹시 이미지업로드 기능을 원하시면다면 다음과 같이 하시면 됩니다.
 
+
+
+#### Model
+
 model에서 다음을 추가해 주시고
 
     has_editor_images
@@ -41,7 +43,16 @@ ex)
     class Post < ActiveRecord::Base
       has_editor_images
     end
-    
+
+#### Migration
+
+다음 명령어로 마이그레이션 파일을 생성해 주시면 됩니다. 
+
+  rake smart_editor:install:migrations
+
+
+
+#### Controller    
     
 controller 에서 다음을
 
@@ -70,6 +81,8 @@ ex)
     end
 
 
+#### View
+
 view 에서는 form_for  안의 block 안에 
 
     <%= f.editor_image_field %>
@@ -83,6 +96,8 @@ ex)
       <%= f.editor_image_field %>
       <%= f.text_area :desc, :class => "smart-editor-text-area" %>
     <% end %>
+
+
 
 
 ### LICENSE
