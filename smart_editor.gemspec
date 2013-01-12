@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.name        = "smart_editor"
   s.version     = SmartEditor::VERSION
   s.authors     = "Younghun Choi"
-  s.email       = "choi0hun@gmail.com"
+  s.email       = "zerohun@goodoc.co.kr"
   s.homepage    = "https://github.com/zerohun/smart_editor_rails"
-  s.summary     = "Rails gem to use smart_editor"
+  s.summary     = "Rails gem for smart_editor"
   s.description = "gem to use WYSIWYG editor for rails user"
 
   s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
