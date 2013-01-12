@@ -30,6 +30,11 @@ application.js 에도 다음과 같이 추가해시면 됩니다.
 
 혹시 이미지업로드 기능을 원하시면다면 다음과 같이 하시면 됩니다.
 
+#### Gemfile
+
+우선 Gemfile에 다음을 추가하셔서 carrierwave gem을 추가해 주셔야 합니다.
+
+    gem 'carrierwave'
 
 
 #### Model
@@ -48,7 +53,7 @@ ex)
 
 다음 명령어로 마이그레이션 파일을 생성해 주시면 됩니다. 
 
-  rake smart_editor:install:migrations
+    rake smart_editor:install:migrations
 
 
 
@@ -96,6 +101,7 @@ ex)
       <%= f.editor_image_field %>
       <%= f.text_area :desc, :class => "smart-editor-text-area" %>
     <% end %>
+
 
 
 
