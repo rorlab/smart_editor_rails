@@ -10,10 +10,5 @@ module SmartEditor
       route("mount SmartEditor::Engine => '/smart_editor'")
 
     end
-
-    def copy_migraiton_file
-      exec "bundle exec rake smart_editor:install:migrations"
-    end
-
   end
 end
