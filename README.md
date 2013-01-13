@@ -1,8 +1,15 @@
 ##Smart editor rails gem
 
+#### 소개 
+
 NHN에서 개발한 smart editor 를 레일즈 사용자들이 사용하기 쉽도록 만든 gem입니다.
 
 rails3 이상에서 작동하도록 되어 있습니다.
+
+스마트에디터 : http://dev.naver.com/projects/smarteditor
+미리보기 : http://jindo.dev.naver.com/smarteditor/demo/SmartEditor2.html
+
+#### Gemfile
 
 Gemfile에 다음과 같이 추가해 주시고
 
@@ -11,11 +18,16 @@ Gemfile에 다음과 같이 추가해 주시고
 
 bundle을 입력하여 gem을 설치한 다음에 
 
+
+#### Generator
+
 다음과 같은 커맨드를 입력하시면 부수적인 파일들이 설치됩니다.
 (html, javasciprt, css, 마이그레이션 등등)
 
     rails g smart_editor
 
+
+#### Javascript
 application.js 에도 다음과 같이 추가해시면 됩니다.
 
     //= require smart_editor
