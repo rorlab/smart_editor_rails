@@ -34,6 +34,8 @@ application.js 에도 다음과 같이 추가해시면 됩니다.
     //= require smart_editor
 
 
+#### View
+
 그리고 form을 작성하실 때 text_area에 "smart-editor-text-area"라고 클래스를 주시면 됩니다. 
 
     <%= f.text_area :desc, :class => "smart-editor-text-area" %>
