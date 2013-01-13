@@ -7,6 +7,7 @@ NHN에서 개발한 smart editor 를 레일즈 사용자들이 사용하기 쉽�
 rails3 이상에서 작동하도록 되어 있습니다.
 
 스마트에디터 : http://dev.naver.com/projects/smarteditor
+
 미리보기 : http://jindo.dev.naver.com/smarteditor/demo/SmartEditor2.html
 
 #### Gemfile
