@@ -27,7 +27,7 @@ module SmartEditor
 
     def create_without_html5
 
-      @editor_image = SmartEditor::EditorImage.new(params[:editor_image])
+      @editor_image = SmartEditor::EditorImage.new(editor_image_params)
       if @editor_image.save
         @result = true
         url = "#{params[:callback]}?callback_func=#{params[:callback_func]}&iImageID=#{@editor_image.id}&sFileURL=#{@editor_image.file.url}&bNewLine=true"
@@ -35,6 +35,13 @@ module SmartEditor
       else
         @result = false
       end
+    end
+
+    private
+
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def editor_image_params
+      params.require(:editor_image).permit(:file, :attacheable_id, :attacheable_type)
     end
 
   end
