@@ -1,5 +1,4 @@
-//= require smart_editor/HuskyEZCreator
-//
+//= require HuskyEZCreator
 
 var oEditors = [];
 $(document).ready(function(event){
